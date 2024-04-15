@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.pc-nav {
+  display: none;
+}
+
+.mobile-nav {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8em;
+}
+.mobile-nav .hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid green;
+}
+.mobile-nav .hamburger .line {
+  height: 2px;
+  width: 70%;
+  background: green;
+}
+
+.banner {
+  background: lightgrey;
+}
+.banner .left .text h1 {
+  font-weight: 500;
+}
+.banner .left .text p {
+  padding-top: 2vh;
+}
+.banner .left .text button {
+  border: none;
+  background: green;
+  color: white;
+  border-radius: 8px;
+  width: 9rem;
+}
+.banner .right img {
+  width: 100%;
+  padding-top: 3vh;
+}
+.banner .services {
+  padding: 5vh 0;
+}
+.banner .services .services-text h1 {
+  font-weight: bold;
+}
+.banner .services .card {
+  font-weight: bold;
+}
+.banner .services .card p {
+  font-weight: 400;
+}
+.banner .services .card a {
+  color: green;
+  padding-left: 0%;
+}
+
+.mission .img {
+  height: 40vh;
+  width: 100%;
+  background-image: url("/images/colleagues-working-together-environment-project (1) 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.mission .img .text-overlay {
+  background-color: black;
+  opacity: 0.6;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.benefits .center-items {
+  text-align: center;
+}
+.benefits .card {
+  background-color: rgb(128, 128, 128);
+  padding: 1rem;
+  border-radius: 15px;
+}
+.benefits .card ol {
+  list-style-type: decimal;
+  padding-left: 1rem;
+}
+.benefits .questions {
+  padding-top: 5vh;
+}
+.benefits .questions .right .container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #cccccc;
+  padding: 20px;
+  color: black;
+  border-radius: 5px;
+}
+.benefits .questions .right .form-group {
+  margin-bottom: 20px;
+}
+.benefits .questions .right .form-group input[type=text],
+.benefits .questions .right .form-group input[type=email],
+.benefits .questions .right .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  box-sizing: border-box;
+}
+.benefits .questions .right .form-group input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+}
+.benefits .questions .right .form-group input[type=submit]:hover {
+  background-color: #555;
+}
+
+.subscribe {
+  text-align: center;
+}
+.subscribe form input {
+  width: 30rem;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .pc-nav {
+    display: block;
+  }
+  .pc-nav .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pc-nav .flex-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 300;
+  }
+  .pc-nav .flex-container ul li {
+    color: green;
+    font-size: 10px;
+  }
+  .pc-nav .flex-container ul li button {
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    width: 9rem;
+  }
+  .banner .left .text h1 {
+    width: 100%;
+    padding-top: 5vh;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .banner .left .text p {
+    font-size: 10px;
+    padding-bottom: 2vh;
+    padding-top: 3vh;
+  }
+  .banner .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .banner .services .cards {
+    display: flex;
+    gap: 8px;
+  }
+  .mission .img .text-overlay {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 15px;
+  }
+  .mission .img .text-overlay p {
+    width: 50%;
+  }
+  .benefits .center-items {
+    text-align: left;
+  }
+  .benefits #heading {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
