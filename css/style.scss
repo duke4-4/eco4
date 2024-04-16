@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: inter;
 }
 ol, ul {
 	list-style: none;
@@ -202,9 +203,12 @@ table {
     }
     .subscribe{
         text-align: center;
+        background-color: #cccccc;
         form{
+            padding-bottom: 2vh;
             input{
-                width: 30rem;
+                width: 20rem;
+                text-align: center;
             }
         }
             
@@ -259,7 +263,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     
                 li{
                     color: green;
-                    font-size: 10px;
+                    font-size: 20px;
     
                     button{
                         border: none;
@@ -280,14 +284,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .banner{
     .left{
         .text{
+            padding-top: 30px;
             h1{
                 width: 100%;
                 padding-top:5vh;
-                font-size: 20px;
+                font-size: 30px;
                 font-weight: bolder;
             }
             p{
-                font-size: 10px;
+                font-size: 15px;
                 padding-bottom: 2vh;
                 padding-top: 3vh;
             }
@@ -312,6 +317,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 }
 .mission{
+    height: 70vh;
     .img{
        .text-overlay{
         display: flex;
@@ -336,16 +342,134 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 	
 }
 }
+.subscribe{
+        text-align: center;
+        background-color: #cccccc;
+        form{
+            padding-bottom: 10px;
+            input{
+                width: 30rem;
+                text-align: center;
+                
+            }
+        }
+            
+    }
+    .footer{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 6vh;
+    }
 
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    .mission{
+        height: 70vh;
+        .img{
+           .text-overlay{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            font-size: 15px;
+            p{
+                width: 50%;
+            }
+         
+           }
+        }
+    }
+    .pc-nav{
+        
+        display: block;
+        .flex-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                font-weight: 300;
+    
+                li{
+                    color: green;
+                    font-size: 20px;
+    
+                    button{
+                        border: none;
+                        background: green;
+                        color: white;
+                        border-radius: 8px;
+                        width: 9rem;
+                }
+            }
+        }
+    
+    }
 
+
+
+
+}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
+    .mission{
+        height: 70vh;
+        .img{
+           .text-overlay{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            font-size: 15px;
+            p{
+                width: 50%;
+            }
+         
+           }
+        }
+    }
+    .pc-nav{
+        
+        display: block;
+        .flex-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
     
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                font-weight: 300;
+    
+                li{
+                    color: green;
+                    font-size: 20px;
+    
+                    button{
+                        border: none;
+                        background: green;
+                        color: white;
+                        border-radius: 8px;
+                        width: 9rem;
+                }
+            }
+        }
+    
+    }
+
+
+
+
+}
 }
 
 

@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  font-family: inter;
 }
 
 ol, ul {
@@ -185,9 +186,14 @@ table {
 
 .subscribe {
   text-align: center;
+  background-color: #cccccc;
+}
+.subscribe form {
+  padding-bottom: 2vh;
 }
 .subscribe form input {
-  width: 30rem;
+  width: 20rem;
+  text-align: center;
 }
 
 /*
@@ -226,7 +232,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .pc-nav .flex-container ul li {
     color: green;
-    font-size: 10px;
+    font-size: 20px;
   }
   .pc-nav .flex-container ul li button {
     border: none;
@@ -235,14 +241,17 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     border-radius: 8px;
     width: 9rem;
   }
+  .banner .left .text {
+    padding-top: 30px;
+  }
   .banner .left .text h1 {
     width: 100%;
     padding-top: 5vh;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
   }
   .banner .left .text p {
-    font-size: 10px;
+    font-size: 15px;
     padding-bottom: 2vh;
     padding-top: 3vh;
   }
@@ -255,6 +264,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .banner .services .cards {
     display: flex;
     gap: 8px;
+  }
+  .mission {
+    height: 70vh;
   }
   .mission .img .text-overlay {
     display: flex;
@@ -273,8 +285,108 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-bottom: 2em;
   }
 }
+.subscribe {
+  text-align: center;
+  background-color: #cccccc;
+}
+.subscribe form {
+  padding-bottom: 10px;
+}
+.subscribe form input {
+  width: 30rem;
+  text-align: center;
+}
+
+.footer {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 6vh;
+}
+
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mission {
+    height: 70vh;
+  }
+  .mission .img .text-overlay {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 15px;
+  }
+  .mission .img .text-overlay p {
+    width: 50%;
+  }
+  .pc-nav {
+    display: block;
+  }
+  .pc-nav .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pc-nav .flex-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 300;
+  }
+  .pc-nav .flex-container ul li {
+    color: green;
+    font-size: 20px;
+  }
+  .pc-nav .flex-container ul li button {
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    width: 9rem;
+  }
+}
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .mission {
+    height: 70vh;
+  }
+  .mission .img .text-overlay {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 15px;
+  }
+  .mission .img .text-overlay p {
+    width: 50%;
+  }
+  .pc-nav {
+    display: block;
+  }
+  .pc-nav .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pc-nav .flex-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 300;
+  }
+  .pc-nav .flex-container ul li {
+    color: green;
+    font-size: 20px;
+  }
+  .pc-nav .flex-container ul li button {
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    width: 9rem;
+  }
+}
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Custom media queries
