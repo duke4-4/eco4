@@ -70,11 +70,11 @@ table {
   align-items: center;
   justify-content: center;
   background-color: lightgrey;
-  width: 50vw;
+  width: 40vw;
   height: 35vh;
   margin-top: 17rem;
   right: 0;
-  margin-right: 0.8rem;
+  margin-right: 5%;
   z-index: 1;
   border: 2px solid green;
 }
@@ -284,6 +284,28 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     text-align: center;
   }
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey;
+  width: 50vw;
+  height: 45vh;
+  margin-top: 16rem;
+  right: 0;
+  margin-right: 5%;
+  z-index: 1;
+  border: 2px solid green;
+}
+.dropdown-content button {
+  border: none;
+  background: green;
+  color: white;
+  border-radius: 8px;
+  width: 9rem;
+}
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   .mobile-nav {
