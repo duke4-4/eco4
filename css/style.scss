@@ -67,9 +67,9 @@ table {
     align-items: center;
     justify-content: center;
     background-color: lightgrey;
-    width: 40vw;
-    height: 32vh;
-    margin-top: 15.4rem;
+    width: 50vw;
+    height: 35vh;
+    margin-top: 17rem;
     right: 0;
     margin-right: 0.8rem;
     z-index: 1;
@@ -262,6 +262,7 @@ border-bottom: none;
                 .form-group input[type="submit"]:hover {
                     background-color: #555;
                 }
+                
             }
         }
         
@@ -282,7 +283,10 @@ border-bottom: none;
             
     }
     
-
+    .subscribe form input {
+        width: 23rem;
+        text-align: center;
+    }
 
 
 
@@ -305,7 +309,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 568px) { 
-
+    .subscribe form input {
+        width: 23rem;
+        text-align: center;
+    }
 
 }
 
@@ -416,7 +423,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         form{
             padding-bottom: 10px;
             input{
-                width: 30rem;
+                width: 23rem;
                 text-align: center;
                 
             }

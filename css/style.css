@@ -70,9 +70,9 @@ table {
   align-items: center;
   justify-content: center;
   background-color: lightgrey;
-  width: 40vw;
-  height: 32vh;
-  margin-top: 15.4rem;
+  width: 50vw;
+  height: 35vh;
+  margin-top: 17rem;
   right: 0;
   margin-right: 0.8rem;
   z-index: 1;
@@ -259,6 +259,11 @@ table {
   text-align: center;
 }
 
+.subscribe form input {
+  width: 23rem;
+  text-align: center;
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -273,6 +278,12 @@ Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+  .subscribe form input {
+    width: 23rem;
+    text-align: center;
+  }
+}
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   .mobile-nav {
@@ -356,7 +367,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   padding-bottom: 10px;
 }
 .subscribe form input {
-  width: 30rem;
+  width: 23rem;
   text-align: center;
 }
 
